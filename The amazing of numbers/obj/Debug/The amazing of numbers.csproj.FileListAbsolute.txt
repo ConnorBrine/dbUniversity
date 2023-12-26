@@ -1,0 +1,86 @@
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\The amazing of numbers.exe.config
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\The amazing of numbers.exe
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\The amazing of numbers.pdb
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.AssemblyReference.cache
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Properties.Resources.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.GenerateResource.cache
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.CoreCompileInputs.cache
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The amazing of numbers.exe
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The amazing of numbers.pdb
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.CopyComplete
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form2.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\aa-DJ\The amazing of numbers.resources.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\aa\The amazing of numbers.resources.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.aa-DJ.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.aa.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\aa-DJ\The amazing of numbers.resources.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\aa\The amazing of numbers.resources.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Register.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\AForge.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\AForge.Video.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\zxing.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\zxing.presentation.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\AForge.xml
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\AForge.Video.xml
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\zxing.xml
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\zxing.presentation.xml
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Login.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.CustomControl.TextBox.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\bin\Debug\Guna.UI2.dll
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.PINLogin.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.QRLogin.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Admin.View.AdminMainForm.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.AcademicAffairMainForm.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Lecturer.View.LecturerMainForm.resources
+C:\Users\NAK\source\repos\The amazing of numbers\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Student.View.StudentMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\The amazing of numbers.exe.config
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\The amazing of numbers.exe
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\The amazing of numbers.pdb
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\aa-DJ\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\aa\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\AForge.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\AForge.Video.DirectShow.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\AForge.Video.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\FontAwesome.Sharp.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\Guna.UI2.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\zxing.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\zxing.presentation.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\AForge.xml
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\AForge.Video.xml
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\AForge.Video.DirectShow.xml
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\zxing.xml
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\bin\Debug\zxing.presentation.xml
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.AssemblyReference.cache
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.AcademicAffairMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Admin.View.AdminMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Lecturer.View.LecturerMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.CustomControl.TextBox.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form2.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Login.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.PINLogin.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Properties.Resources.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.QRLogin.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Register.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.aa-DJ.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.aa.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.GenerateResource.cache
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.CoreCompileInputs.cache
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\aa-DJ\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\aa\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.CopyComplete
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The amazing of numbers.exe
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The amazing of numbers.pdb
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Button1.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Button2.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Button3.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Course.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.StudentArea.View.StudentMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.EditCourse.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.viewClass.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.Schedule.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.Calender.resources
