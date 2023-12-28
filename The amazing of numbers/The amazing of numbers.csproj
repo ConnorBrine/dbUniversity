@@ -133,7 +133,19 @@
     <Compile Include="Area\Lecturer\View\LecturerMainForm.Designer.cs">
       <DependentUpon>LecturerMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Area\Lecturer\View\Lecture_Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area\Lecturer\View\Lecture_Calendar.Designer.cs">
+      <DependentUpon>Lecture_Calendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Area\StudentArea\Controllers\StudentAreaController.cs" />
+    <Compile Include="Area\StudentArea\View\Calender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area\StudentArea\View\Calender.Designer.cs">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Area\StudentArea\View\JoinClasses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +237,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbUniversity.dbml</DependentUpon>
     </Compile>
+    <Compile Include="SaveCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveCalendar.Designer.cs">
+      <DependentUpon>SaveCalendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +293,12 @@
     <EmbeddedResource Include="Area\Lecturer\View\LecturerMainForm.resx">
       <DependentUpon>LecturerMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Area\Lecturer\View\Lecture_Calendar.resx">
+      <DependentUpon>Lecture_Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area\StudentArea\View\Calender.resx">
+      <DependentUpon>Calender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Area\StudentArea\View\JoinClasses.resx">
       <DependentUpon>JoinClasses.cs</DependentUpon>
     </EmbeddedResource>
@@ -307,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveCalendar.resx">
+      <DependentUpon>SaveCalendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

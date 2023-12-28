@@ -137,7 +137,7 @@ namespace The_amazing_of_numbers.Area.StudentArea.View
             string course_id = "";
             getSubject = db.Subject_s.Where(x => x.course_name == courseName).FirstOrDefault();
             course_id = getSubject.course_id;
-            var test = db.OpenClasses.Where(x => x.course_id == course_id);
+            List<OpenClass> test = db.OpenClasses.Where(x => x.course_id == course_id).ToList();
             
 
             foreach (var item in test)
@@ -147,7 +147,7 @@ namespace The_amazing_of_numbers.Area.StudentArea.View
                 lecture = db.Lectures.Where(x => x.id == lectureReg.id).FirstOrDefault();
 
                 string time = "";
-
+               
                 if (c.date_start <= DateTime.Parse("15:05:00"))
                 {
                     if (c.date_start <= DateTime.Parse("12:30:00"))

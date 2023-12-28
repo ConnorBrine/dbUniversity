@@ -31,5 +31,10 @@ namespace The_amazing_of_numbers.Area.Lecturer.View
             c.Show();
         }
 
+        private void calendarbtn_Click(object sender, EventArgs e)
+        {
+            Lecture_Calendar lc = new Lecture_Calendar(cur_user);
+            lc.Show();
+        }
     }
 }

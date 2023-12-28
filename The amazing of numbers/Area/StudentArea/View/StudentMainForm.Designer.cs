@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.calenderbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -82,6 +83,16 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // calenderbtn
+            // 
+            this.calenderbtn.Location = new System.Drawing.Point(189, 116);
+            this.calenderbtn.Name = "calenderbtn";
+            this.calenderbtn.Size = new System.Drawing.Size(209, 62);
+            this.calenderbtn.TabIndex = 2;
+            this.calenderbtn.Text = "Lịch";
+            this.calenderbtn.UseVisualStyleBackColor = true;
+            this.calenderbtn.Click += new System.EventHandler(this.calenderbtn_Click);
+            // 
             // StudentMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -90,6 +101,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.username);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.calenderbtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "StudentMainForm";
@@ -106,5 +118,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button calenderbtn;
     }
 }

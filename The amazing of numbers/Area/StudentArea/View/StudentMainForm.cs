@@ -37,5 +37,11 @@ namespace The_amazing_of_numbers.Area.StudentArea.View
             JoinClasses j = new JoinClasses(cur_user);
             j.Show();
         }
+
+        private void calenderbtn_Click(object sender, EventArgs e)
+        {
+            Calender ca = new Calender(cur_user);
+            ca.Show();
+        }
     }
 }

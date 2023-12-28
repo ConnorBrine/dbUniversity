@@ -24,7 +24,7 @@ namespace The_amazing_of_numbers
             //Application.Run(new Schedule());
             Application.Run(new Login());
             //Application.Run(new JoinClasses());
-
+           //Application.Run(new Area.StudentArea.View.Calender());
         }
     }
 }
