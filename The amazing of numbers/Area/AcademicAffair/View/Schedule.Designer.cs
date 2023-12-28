@@ -315,7 +315,7 @@
             // classescmb
             // 
             this.classescmb.FormattingEnabled = true;
-            this.classescmb.Location = new System.Drawing.Point(1532, 600);
+            this.classescmb.Location = new System.Drawing.Point(1792, 604);
             this.classescmb.Name = "classescmb";
             this.classescmb.Size = new System.Drawing.Size(94, 24);
             this.classescmb.TabIndex = 20;
@@ -325,7 +325,7 @@
             // 
             this.fromcmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fromcmb.FormattingEnabled = true;
-            this.fromcmb.Location = new System.Drawing.Point(1786, 668);
+            this.fromcmb.Location = new System.Drawing.Point(2046, 672);
             this.fromcmb.Name = "fromcmb";
             this.fromcmb.Size = new System.Drawing.Size(94, 24);
             this.fromcmb.TabIndex = 20;
@@ -335,7 +335,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1756, 649);
+            this.label4.Location = new System.Drawing.Point(2016, 653);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 16);
             this.label4.TabIndex = 21;
@@ -346,7 +346,7 @@
             // 
             this.option1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.option1.FormattingEnabled = true;
-            this.option1.Location = new System.Drawing.Point(1609, 616);
+            this.option1.Location = new System.Drawing.Point(1869, 620);
             this.option1.Name = "option1";
             this.option1.Size = new System.Drawing.Size(94, 24);
             this.option1.TabIndex = 20;
@@ -357,7 +357,7 @@
             // 
             this.option2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.option2.FormattingEnabled = true;
-            this.option2.Location = new System.Drawing.Point(1609, 721);
+            this.option2.Location = new System.Drawing.Point(1869, 725);
             this.option2.Name = "option2";
             this.option2.Size = new System.Drawing.Size(94, 24);
             this.option2.TabIndex = 20;
@@ -367,7 +367,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1606, 588);
+            this.label8.Location = new System.Drawing.Point(1866, 592);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(87, 16);
             this.label8.TabIndex = 21;
@@ -840,7 +840,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1420, 1055);
+            this.ClientSize = new System.Drawing.Size(1608, 1055);
             this.Controls.Add(this.infotxtbox);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);

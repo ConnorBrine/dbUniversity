@@ -24,6 +24,15 @@
       <Association Name="Violate_StudentVio" Member="StudentVios" ThisKey="rules_id" OtherKey="rules_id" Type="StudentVio" />
     </Type>
   </Table>
+  <Table Name="dbo.Academic_AffairPickDay" Member="Academic_AffairPickDays">
+    <Type Name="Academic_AffairPickDay">
+      <Column Name="course_id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="course_name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="section" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="class_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Subject__Academic_AffairPickDay" Member="Subject_" ThisKey="course_id" OtherKey="course_id" Type="Subject_" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Admin" Member="Admins">
     <Type Name="Admin">
       <Column Name="id" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -75,10 +84,21 @@
       <Column Name="Academic_rank" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="assigned_subjects" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
       <Column Name="picture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Lecture_LecturePickDay" Member="LecturePickDays" ThisKey="id" OtherKey="lectureID" Type="LecturePickDay" />
       <Association Name="Lecture_LectureRegisClass" Member="LectureRegisClasses" ThisKey="id" OtherKey="id" Type="LectureRegisClass" />
       <Association Name="Lecture_LectureVio" Member="LectureVios" ThisKey="id" OtherKey="id" Type="LectureVio" />
       <Association Name="Department_Lecture" Member="Department" ThisKey="department_id" OtherKey="department_id" Type="Department" IsForeignKey="true" />
       <Association Name="User_Lecture" Member="User" ThisKey="id" OtherKey="id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LecturePickDay" Member="LecturePickDays">
+    <Type Name="LecturePickDay">
+      <Column Name="lectureID" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="course_name" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="section" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="teachExp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcademicRank" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Lecture_LecturePickDay" Member="Lecture" ThisKey="lectureID" OtherKey="id" Type="Lecture" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LectureRegisClass" Member="LectureRegisClasses">
@@ -169,6 +189,7 @@
       <Column Name="department_id" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="credits" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="cost" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="Subject__Academic_AffairPickDay" Member="Academic_AffairPickDays" ThisKey="course_id" OtherKey="course_id" Type="Academic_AffairPickDay" />
       <Association Name="Subject__OpenClass" Member="OpenClasses" ThisKey="course_id" OtherKey="course_id" Type="OpenClass" />
       <Association Name="Department_Subject_" Member="Department" ThisKey="department_id" OtherKey="department_id" Type="Department" IsForeignKey="true" />
     </Type>

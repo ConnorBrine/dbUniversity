@@ -32,5 +32,10 @@ namespace The_amazing_of_numbers.Area.StudentArea.View
             c.Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            JoinClasses j = new JoinClasses(cur_user);
+            j.Show();
+        }
     }
 }

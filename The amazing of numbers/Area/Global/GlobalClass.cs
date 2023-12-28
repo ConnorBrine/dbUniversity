@@ -10,403 +10,421 @@ namespace The_amazing_of_numbers.Area.Global
 {
     static class GlobalClass
     {
-        //filter setting
         static public List<string> sv1 = new List<string>()
-        {
-            "Corporate culture",
-            "Programing C",
-            "Practice programing C",
-            "Computer architecture and Operating system",
-            "Practice computer architecture",
-            "Practice operating system",
-            "Software technology",
-            "English 1",
-            "English 2",
-            "English 3",
-            "English 4",
-            "Linear algebra",
-            "Discrete mathematics",
-            "National defense and security 1",
-            "National defense and security 2",
-            "National defense and security 3",
-            "National defense and security 4",
-            "Project design 1",
-            "Vovinam 1"
+{
+    "Corporate culture",
+    "Programing C",
+    "Practice programing C",
+    "Computer architecture and Operating system",
+    "Practice computer architecture",
+    "Practice operating system",
+    "Software technology",
+    "English 1",
+    "English 2",
+    "English 3",
+    "English 4",
+    "Linear algebra",
+    "Discrete mathematics",
+    "National defense and security 1",
+    "National defense and security 2",
+    "National defense and security 3",
+    "National defense and security 4",
+    "Project design 1",
+    "Vovinam 1"
 
-        }; //4
+}; //4
         static public List<string> sv2 = new List<string>()
-        {
-            "Programming technique",
-            "Object-oriented programming",
-            "Web programming",
-            "Practice object-oriented programming",
-            "Data structures and algorithms",
-            "Practice data structures and algorithms",
-            "Practice database fundamentals",
-            "Practice database management",
-            "Pratice graph theory",
-            "English 5",
-            "English 6",
-            "English 7",
-            "English 8",
-            "Project design 2",
-            "Vovinam 2"
-        }; //7
+{
+    "Programming technique",
+    "Object-oriented programming",
+    "Web programming",
+    "Practice object-oriented programming",
+    "Data structures and algorithms",
+    "Practice data structures and algorithms",
+    "Practice database fundamentals",
+    "Practice database management",
+    "Pratice graph theory",
+    "English 5",
+    "English 6",
+    "English 7",
+    "English 8",
+    "Project design 2",
+    "Vovinam 2"
+}; //7
         static public List<string> sv3 = new List<string>()
-        {
-            "Artificial intelligence",
-            "Programming on the Windows platform",
-            "Practice programming on the Windows platform",
-            "Practical application programming with Java",
-            "Information technology project management",
-            "Computer network",
-            "Practice computer network",
-            "Information security",
-            "English 9",
-            "English 10",
-            "English 11",
-            "Probability and statistics",
-            "Vovinam 3"
-        }; //10
+{
+    "Artificial intelligence",
+    "Programming on the Windows platform",
+    "Practice programming on the Windows platform",
+    "Practical application programming with Java",
+    "Information technology project management",
+    "Computer network",
+    "Practice computer network",
+    "Information security",
+    "English 9",
+    "English 10",
+    "English 11",
+    "Probability and statistics",
+    "Vovinam 3"
+}; //10
         static public List<string> sv4 = new List<string>()
-        {
-            "Business reality",
-            "Marxism-Leninism philosophy",
-            "Marxism-Leninism political economy",
-            "Business communication skills"
-        }; //9
+{
+    "Business reality",
+    "Marxism-Leninism philosophy",
+    "Marxism-Leninism political economy",
+    "Business communication skills"
+}; //9
 
+
+
+
+        //Chỉ chọn học kỳ 
         static public List<string> HK1A = new List<string>()
-        {
-            "National defense and security 1",
-            "National defense and security 2",
-            "National defense and security 3",
-            "National defense and security 4",
-            "English 1",
-            "Programing C",
-            "Practice programing C",
-            "Pratice graph theory",
-            "English 5",
-            "Data structures and algorithms",
-            "Practice data structures and algorithms",
-            "Probability and statistics",
-            "English 9",
-            "Practical application programming with Java",
-        };
+{
+    "National defense and security 1",
+    "National defense and security 2",
+    "National defense and security 3",
+    "National defense and security 4",
+    "English 1",
+    "Programing C",
+    "Practice programing C",
+    "Pratice graph theory",
+    "English 5",
+    "Data structures and algorithms",
+    "Practice data structures and algorithms",
+    "Probability and statistics",
+    "English 9",
+    "Practical application programming with Java",
+};
         static public List<string> HK1B = new List<string>()
-        {
-            "Corporate culture",
-            "Linear algebra",
-            "English 2",
-            "Software technology",
-            "Practice database fundamentals",
-            "English 6",
-            "Programming technique",
-            "Practice database management",
-            "Programming on the Windows platform",
-            "English 10",
-            "Artificial intelligence",
-            "Practice programming on the Windows platform",
-        };
+{
+    "Corporate culture",
+    "Linear algebra",
+    "English 2",
+    "Software technology",
+    "Practice database fundamentals",
+    "English 6",
+    "Programming technique",
+    "Practice database management",
+    "Programming on the Windows platform",
+    "English 10",
+    "Artificial intelligence",
+    "Practice programming on the Windows platform",
+};
         static public List<string> HK2A = new List<string>()
-        {
-            "Vovinam 1",
-            "Vovinam 2",
-            "Vovinam 3",
-            "Discrete mathematics",
-            "English 3",
-            "Computer architecture and Operating system",
-            "Practice computer architecture",
-            "English 7",
-            "Object-oriented programming",
-            "Practice object-oriented programming",
-            "English 11",
-            "Computer network",
-            "Practice computer network",
-        };
+{
+    "Vovinam 1",
+    "Vovinam 2",
+    "Vovinam 3",
+    "Discrete mathematics",
+    "English 3",
+    "Computer architecture and Operating system",
+    "Practice computer architecture",
+    "English 7",
+    "Object-oriented programming",
+    "Practice object-oriented programming",
+    "English 11",
+    "Computer network",
+    "Practice computer network",
+};
         static public List<string> HK2B = new List<string>()
-        {
-            "English 4",
-            "Project design 1",
-            "Project design 2",
-            "Computer architecture and Operating system",
-            "Practice operating system",
-            "English 8",
-            "Web programming",
-            "Information security",
-            "Information technology project management",
-        };
+{
+    "English 4",
+    "Project design 1",
+    "Project design 2",
+    "Computer architecture and Operating system",
+    "Practice operating system",
+    "English 8",
+    "Web programming",
+    "Information security",
+    "Information technology project management",
+};
 
 
         //BELOW WILL BE RUN AFTER CHOOSE ANY COURSE 
-        
 
+        //Chỉ chọn theo môn
         static public List<string> IT = new List<string>()
-        {
-            "Programing C",
-            "Computer architecture and Operating system",
-            "Software technology",
+{
+    "Programing C",
+    "Computer architecture and Operating system",
+    "Software technology",
 
-            "Programming technique",
-            "Object-oriented programming",
-            "Web programming",
-            "Data structures and algorithms",
-            "Practice database fundamentals",
-            "Pratice graph theory",
+    "Programming technique",
+    "Object-oriented programming",
+    "Web programming",
+    "Data structures and algorithms",
+    "Practice database fundamentals",
+    "Pratice graph theory",
 
-             "Artificial intelligence",
-            "Programming on the Windows platform",
-            "Practical application programming with Java",
-            "Information technology project management",
-            "Computer network",
-            "Information security",
-        }; //always in afternoon //IT (1)
+     "Artificial intelligence",
+    "Programming on the Windows platform",
+    "Practical application programming with Java",
+    "Information technology project management",
+    "Computer network",
+    "Information security",
+}; //always in afternoon //IT (1)
         static public List<string> Math = new List<string>()
-        {
+{
 
-            "Linear algebra",
-            "Probability and statistics",
-            "Discrete mathematics"
+    "Linear algebra",
+    "Probability and statistics",
+    "Discrete mathematics"
 
-        }; //except this only in morning //IT (2)
+}; //except this only in morning //IT (2)
         static public List<string> Practice = new List<string>()
-        {
-            "Practice programing C",
-            "Practice computer architecture",
-            "Practice operating system",
-            "Practice data structures and algorithms",
-            "Practice database management",
-            "Practice object-oriented programming",
-            "Practice programming on the Windows platform",
-            "Practice computer network",
-        }; //always in Saturday and Thursday, once/week //IT (3)
-        static public List<string> Bonus = new List<string>()
-        {
-            "Project design 1",
-            "Project design 2",
-            "Corporate culture",
-            "Business reality",
-            "Marxism-Leninism philosophy",
-            "Marxism-Leninism political economy",
-            "Business communication skills"
+{
+    "Practice programing C",
+    "Practice computer architecture",
+    "Practice operating system",
+    "Practice data structures and algorithms",
+    "Practice database management",
+    "Practice object-oriented programming",
+    "Practice programming on the Windows platform",
+    "Practice computer network",
+}; //always in Saturday and Thursday, once/week //IT (3)
+        static public List<string> Extra = new List<string>()
+{
+    "Project design 1",
+    "Project design 2",
+    "Corporate culture",
+    "Business reality",
+    "Marxism-Leninism philosophy",
+    "Marxism-Leninism political economy",
+    "Business communication skills"
 
-        }; //mostly morning (except "Project design 2"), with student year 4 can choose freely //VJIT, SC, DP
+}; //mostly morning (except "Project design 2"), with student year 4 can choose freely //VJIT, SC, DP
         static public List<string> DP = new List<string>()
-        {
-            "National defense and security 1",
-            "National defense and security 2",
-            "National defense and security 3",
-            "National defense and security 4",
-        }; //1 and 2 go with 3 in morning, 4 only in afernoon (2-3, 4-5)
+{
+    "National defense and security 1",
+    "National defense and security 2",
+    "National defense and security 3",
+    "National defense and security 4",
+}; //1 and 2 go with 3 in morning, 4 only in afernoon (2-3, 4-5)
         static public List<string> TA = new List<string>()
-        {
-            "English 1",
-            "English 2",
-            "English 3",
-            "English 4",
-            "English 5",
-            "English 6",
-            "English 7",
-            "English 8",
-            "English 9",
-            "English 10",
-            "English 11",
-        }; //always in morning (2, 4, 6)
+{
+    "English 1",
+    "English 2",
+    "English 3",
+    "English 4",
+    "English 5",
+    "English 6",
+    "English 7",
+    "English 8",
+    "English 9",
+    "English 10",
+    "English 11",
+}; //always in morning (2, 4, 6)
         static public List<string> PE = new List<string>()
-        {
-            "Vovinam 1",
-            "Vovinam 2",
-            "Vovinam 3",
-        }; //always in afternoon (2-5, 3-6, 4-7)
+{
+    "Vovinam 1",
+    "Vovinam 2",
+    "Vovinam 3",
+}; //always in afternoon (2-5, 3-6, 4-7)
+
+
+
+
+        //From this 
+
 
         //Year 1
         static public List<string> sv1_HK1A_IT = new List<string>()
-        {
-            "Programing C",
-        };
+{
+    "Programing C",
+};
         static public List<string> sv1_HK1A_Practice = new List<string>()
-        {
-            "Practice programing C",
+{
+    "Practice programing C",
 
-        };
+};
         static public List<string> sv1_HK1A_DP = new List<string>()
-        {
-            "National defense and security 1",
-            "National defense and security 2",
-            "National defense and security 3",
-            "National defense and security 4",
-        };
+{
+    "National defense and security 1",
+    "National defense and security 2",
+    "National defense and security 3",
+    "National defense and security 4",
+};
         static public List<string> sv1_HK1A_TA = new List<string>()
-        {
-            "English 1",
-        };
+{
+    "English 1",
+};
 
         static public List<string> sv1_HK1B_IT = new List<string>()
-        {
-            "Software technology",
-        };
+{
+    "Software technology",
+};
         static public List<string> sv1_HK1B_Math = new List<string>()
-        {
-            "Linear algebra",
-        };
-        static public List<string> sv1_HK1B_Bonus = new List<string>()
-        {
-            "Corporate culture",
-        };
+{
+    "Linear algebra",
+};
+        static public List<string> sv1_HK1B_Extra = new List<string>()
+{
+    "Corporate culture",
+};
         static public List<string> sv1_HK1B_TA = new List<string>()
-        {
-            "English 2",
-        };
+{
+    "English 2",
+};
 
         static public List<string> sv1_HK2A_IT = new List<string>()
-        {
-            "Computer architecture and Operating system",
-        };
+{
+    "Computer architecture and Operating system",
+};
         static public List<string> sv1_HK2A_Math = new List<string>()
-        {
-            "Discrete mathematics",
-        };
+{
+    "Discrete mathematics",
+};
         static public List<string> sv1_HK2A_Practice = new List<string>()
-        {            
-            "Practice computer architecture",
-        };
+{
+    "Practice computer architecture",
+};
         static public List<string> sv1_HK2A_TA = new List<string>()
-        {
-            "English 3",
-        };
+{
+    "English 3",
+};
         static public List<string> sv1_HK2A_PE = new List<string>()
-        {
-            "Vovinam 1",
-        };
+{
+    "Vovinam 1",
+};
 
         static public List<string> sv1_HK2B_IT = new List<string>()
-        {
-            "Computer architecture and Operating system",
-        };
+{
+    "Computer architecture and Operating system",
+};
         static public List<string> sv1_HK2B_Practice = new List<string>()
-        {
-            "Practice operating system",
-        };
-        static public List<string> sv1_HK2B_Bonus = new List<string>()
-        {
-            "Project design 1",
-        };
+{
+    "Practice operating system",
+};
+        static public List<string> sv1_HK2B_Extra = new List<string>()
+{
+    "Project design 1",
+};
         static public List<string> sv1_HK2B_TA = new List<string>()
-        {
-            "English 4",
-        };
+{
+    "English 4",
+};
 
         //Year 2
         static public List<string> sv2_HK1A_IT = new List<string>()
-        {
-            "Data structures and algorithms",
-            "Pratice graph theory",
-        };
+{
+    "Data structures and algorithms",
+    "Pratice graph theory",
+};
         static public List<string> sv2_HK1A_TA = new List<string>()
-        {
-            "English 5",
-        };
+{
+    "English 5",
+};
         static public List<string> sv2_HK1A_Practice = new List<string>()
-        {
-            "Practice data structures and algorithms",
-        };
+{
+    "Practice data structures and algorithms",
+};
 
         static public List<string> sv2_HK1B_IT = new List<string>()
-        {
-            "Practice database fundamentals",
-            "Programming technique",
-        };
+{
+    "Practice database fundamentals",
+    "Programming technique",
+};
         static public List<string> sv2_HK1B_Practice = new List<string>()
-        {
-            "Practice database management",
-        };
+{
+    "Practice database management",
+};
         static public List<string> sv2_HK1B_TA = new List<string>()
-        {
-            "English 6",
-        };
+{
+    "English 6",
+};
 
         static public List<string> sv2_HK2A_IT = new List<string>()
-        {
-            "Object-oriented programming",
-        };        
+{
+    "Object-oriented programming",
+};
         static public List<string> sv2_HK2A_Practice = new List<string>()
-        {
-            "Practice object-oriented programming",
-        };
+{
+    "Practice object-oriented programming",
+};
         static public List<string> sv2_HK2A_TA = new List<string>()
-        {
-            "English 7",
-        };
+{
+    "English 7",
+};
         static public List<string> sv2_HK2A_PE = new List<string>()
-        {
-            "Vovinam 2",
-        };
+{
+    "Vovinam 2",
+};
 
         static public List<string> sv2_HK2B_IT = new List<string>()
-        {
-            "Web programming",
-        };
-        static public List<string> sv2_HK2B_Bonus = new List<string>()
-        {
-            "Project design 2",
-        };
+{
+    "Web programming",
+};
+        static public List<string> sv2_HK2B_Extra = new List<string>()
+{
+    "Project design 2",
+};
         static public List<string> sv2_HK2B_TA = new List<string>()
-        {
-            "English 8",
-        };
-        
+{
+    "English 8",
+};
+
         //Year 3
         static public List<string> sv3_HK1A_IT = new List<string>()
-        {
-            "Practical application programming with Java",
-        };
+{
+    "Practical application programming with Java",
+};
         static public List<string> sv3_HK1A_Math = new List<string>()
-        {
-            "Probability and statistics",
-        };
+{
+    "Probability and statistics",
+};
         static public List<string> sv3_HK1A_TA = new List<string>()
-        {
-            "English 9",
-        };
+{
+    "English 9",
+};
 
         static public List<string> sv3_HK1B_IT = new List<string>()
-        {
-            "Artificial intelligence",
-            "Programming on the Windows platform", 
-        };
+{
+    "Artificial intelligence",
+    "Programming on the Windows platform",
+};
         static public List<string> sv3_HK1B_Practice = new List<string>()
-        {
-           "Practice programming on the Windows platform",
-        };  
+{
+   "Practice programming on the Windows platform",
+};
         static public List<string> sv3_HK1B_TA = new List<string>()
-        {
-            "English 10",
-        };
+{
+    "English 10",
+};
 
         static public List<string> sv3_HK2A_IT = new List<string>()
-        {
-            "Computer network",
-        };
+{
+    "Computer network",
+};
         static public List<string> sv3_HK2A_Practice = new List<string>()
-        {
-            "Practice computer network",
-        };
+{
+    "Practice computer network",
+};
         static public List<string> sv3_HK2A_TA = new List<string>()
-        {
-            "English 11",
-        };
+{
+    "English 11",
+};
         static public List<string> sv3_HK2A_PE = new List<string>()
-        {
-            "Vovinam 3",
-        };
+{
+    "Vovinam 3",
+};
 
         static public List<string> sv3_HK2B_IT = new List<string>()
-        {
-            "Information technology project management",
-            "Information security",
-        };
+{
+    "Information technology project management",
+    "Information security",
+};
 
-        //Year 4 (Alrady in sv4)
+
+        static public string HK1Adates = "08/21-10/22";
+        static public string HK1Bdates = "11/13-01/07";
+        static public string HK2Adates = "02/19-04/14";
+        static public string HK2Bdates = "05/06-06/30";
+
+        static public string Ca1 = "06:45:00-09:00:00";
+        static public string Ca2 = "09:20:00-11:35:00";
+        static public string Ca3 = "12:30:00-14:45:00";
+        static public string Ca4 = "15:05:00-17:20:00";
 
     }
 }

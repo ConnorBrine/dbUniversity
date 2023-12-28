@@ -36,6 +36,9 @@ namespace The_amazing_of_numbers.Model
     partial void InsertViolate(Violate instance);
     partial void UpdateViolate(Violate instance);
     partial void DeleteViolate(Violate instance);
+    partial void InsertAcademic_AffairPickDay(Academic_AffairPickDay instance);
+    partial void UpdateAcademic_AffairPickDay(Academic_AffairPickDay instance);
+    partial void DeleteAcademic_AffairPickDay(Academic_AffairPickDay instance);
     partial void InsertAdmin(Admin instance);
     partial void UpdateAdmin(Admin instance);
     partial void DeleteAdmin(Admin instance);
@@ -48,6 +51,9 @@ namespace The_amazing_of_numbers.Model
     partial void InsertLecture(Lecture instance);
     partial void UpdateLecture(Lecture instance);
     partial void DeleteLecture(Lecture instance);
+    partial void InsertLecturePickDay(LecturePickDay instance);
+    partial void UpdateLecturePickDay(LecturePickDay instance);
+    partial void DeleteLecturePickDay(LecturePickDay instance);
     partial void InsertLectureRegisClass(LectureRegisClass instance);
     partial void UpdateLectureRegisClass(LectureRegisClass instance);
     partial void DeleteLectureRegisClass(LectureRegisClass instance);
@@ -123,6 +129,14 @@ namespace The_amazing_of_numbers.Model
 			}
 		}
 		
+		public System.Data.Linq.Table<Academic_AffairPickDay> Academic_AffairPickDays
+		{
+			get
+			{
+				return this.GetTable<Academic_AffairPickDay>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Admin> Admins
 		{
 			get
@@ -152,6 +166,14 @@ namespace The_amazing_of_numbers.Model
 			get
 			{
 				return this.GetTable<Lecture>();
+			}
+		}
+		
+		public System.Data.Linq.Table<LecturePickDay> LecturePickDays
+		{
+			get
+			{
+				return this.GetTable<LecturePickDay>();
 			}
 		}
 		
@@ -727,6 +749,181 @@ namespace The_amazing_of_numbers.Model
 		{
 			this.SendPropertyChanging();
 			entity.Violate = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Academic_AffairPickDay")]
+	public partial class Academic_AffairPickDay : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _course_id;
+		
+		private string _course_name;
+		
+		private string _section;
+		
+		private string _class_name;
+		
+		private EntityRef<Subject_> _Subject_;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Oncourse_idChanging(string value);
+    partial void Oncourse_idChanged();
+    partial void Oncourse_nameChanging(string value);
+    partial void Oncourse_nameChanged();
+    partial void OnsectionChanging(string value);
+    partial void OnsectionChanged();
+    partial void Onclass_nameChanging(string value);
+    partial void Onclass_nameChanged();
+    #endregion
+		
+		public Academic_AffairPickDay()
+		{
+			this._Subject_ = default(EntityRef<Subject_>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_course_id", DbType="NVarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string course_id
+		{
+			get
+			{
+				return this._course_id;
+			}
+			set
+			{
+				if ((this._course_id != value))
+				{
+					if (this._Subject_.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Oncourse_idChanging(value);
+					this.SendPropertyChanging();
+					this._course_id = value;
+					this.SendPropertyChanged("course_id");
+					this.Oncourse_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_course_name", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string course_name
+		{
+			get
+			{
+				return this._course_name;
+			}
+			set
+			{
+				if ((this._course_name != value))
+				{
+					this.Oncourse_nameChanging(value);
+					this.SendPropertyChanging();
+					this._course_name = value;
+					this.SendPropertyChanged("course_name");
+					this.Oncourse_nameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_section", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string section
+		{
+			get
+			{
+				return this._section;
+			}
+			set
+			{
+				if ((this._section != value))
+				{
+					this.OnsectionChanging(value);
+					this.SendPropertyChanging();
+					this._section = value;
+					this.SendPropertyChanged("section");
+					this.OnsectionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_class_name", DbType="VarChar(50)")]
+		public string class_name
+		{
+			get
+			{
+				return this._class_name;
+			}
+			set
+			{
+				if ((this._class_name != value))
+				{
+					this.Onclass_nameChanging(value);
+					this.SendPropertyChanging();
+					this._class_name = value;
+					this.SendPropertyChanged("class_name");
+					this.Onclass_nameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Subject__Academic_AffairPickDay", Storage="_Subject_", ThisKey="course_id", OtherKey="course_id", IsForeignKey=true)]
+		public Subject_ Subject_
+		{
+			get
+			{
+				return this._Subject_.Entity;
+			}
+			set
+			{
+				Subject_ previousValue = this._Subject_.Entity;
+				if (((previousValue != value) 
+							|| (this._Subject_.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Subject_.Entity = null;
+						previousValue.Academic_AffairPickDays.Remove(this);
+					}
+					this._Subject_.Entity = value;
+					if ((value != null))
+					{
+						value.Academic_AffairPickDays.Add(this);
+						this._course_id = value.course_id;
+					}
+					else
+					{
+						this._course_id = default(string);
+					}
+					this.SendPropertyChanged("Subject_");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 	
@@ -1519,6 +1716,8 @@ namespace The_amazing_of_numbers.Model
 		
 		private System.Data.Linq.Binary _picture;
 		
+		private EntitySet<LecturePickDay> _LecturePickDays;
+		
 		private EntitySet<LectureRegisClass> _LectureRegisClasses;
 		
 		private EntitySet<LectureVio> _LectureVios;
@@ -1559,6 +1758,7 @@ namespace The_amazing_of_numbers.Model
 		
 		public Lecture()
 		{
+			this._LecturePickDays = new EntitySet<LecturePickDay>(new Action<LecturePickDay>(this.attach_LecturePickDays), new Action<LecturePickDay>(this.detach_LecturePickDays));
 			this._LectureRegisClasses = new EntitySet<LectureRegisClass>(new Action<LectureRegisClass>(this.attach_LectureRegisClasses), new Action<LectureRegisClass>(this.detach_LectureRegisClasses));
 			this._LectureVios = new EntitySet<LectureVio>(new Action<LectureVio>(this.attach_LectureVios), new Action<LectureVio>(this.detach_LectureVios));
 			this._Department = default(EntityRef<Department>);
@@ -1814,6 +2014,19 @@ namespace The_amazing_of_numbers.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Lecture_LecturePickDay", Storage="_LecturePickDays", ThisKey="id", OtherKey="lectureID")]
+		public EntitySet<LecturePickDay> LecturePickDays
+		{
+			get
+			{
+				return this._LecturePickDays;
+			}
+			set
+			{
+				this._LecturePickDays.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Lecture_LectureRegisClass", Storage="_LectureRegisClasses", ThisKey="id", OtherKey="id")]
 		public EntitySet<LectureRegisClass> LectureRegisClasses
 		{
@@ -1928,6 +2141,18 @@ namespace The_amazing_of_numbers.Model
 			}
 		}
 		
+		private void attach_LecturePickDays(LecturePickDay entity)
+		{
+			this.SendPropertyChanging();
+			entity.Lecture = this;
+		}
+		
+		private void detach_LecturePickDays(LecturePickDay entity)
+		{
+			this.SendPropertyChanging();
+			entity.Lecture = null;
+		}
+		
 		private void attach_LectureRegisClasses(LectureRegisClass entity)
 		{
 			this.SendPropertyChanging();
@@ -1950,6 +2175,205 @@ namespace The_amazing_of_numbers.Model
 		{
 			this.SendPropertyChanging();
 			entity.Lecture = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LecturePickDay")]
+	public partial class LecturePickDay : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _lectureID;
+		
+		private string _course_name;
+		
+		private string _section;
+		
+		private System.Nullable<int> _teachExp;
+		
+		private string _AcademicRank;
+		
+		private EntityRef<Lecture> _Lecture;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnlectureIDChanging(string value);
+    partial void OnlectureIDChanged();
+    partial void Oncourse_nameChanging(string value);
+    partial void Oncourse_nameChanged();
+    partial void OnsectionChanging(string value);
+    partial void OnsectionChanged();
+    partial void OnteachExpChanging(System.Nullable<int> value);
+    partial void OnteachExpChanged();
+    partial void OnAcademicRankChanging(string value);
+    partial void OnAcademicRankChanged();
+    #endregion
+		
+		public LecturePickDay()
+		{
+			this._Lecture = default(EntityRef<Lecture>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_lectureID", DbType="NVarChar(100) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string lectureID
+		{
+			get
+			{
+				return this._lectureID;
+			}
+			set
+			{
+				if ((this._lectureID != value))
+				{
+					if (this._Lecture.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnlectureIDChanging(value);
+					this.SendPropertyChanging();
+					this._lectureID = value;
+					this.SendPropertyChanged("lectureID");
+					this.OnlectureIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_course_name", DbType="VarChar(100) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string course_name
+		{
+			get
+			{
+				return this._course_name;
+			}
+			set
+			{
+				if ((this._course_name != value))
+				{
+					this.Oncourse_nameChanging(value);
+					this.SendPropertyChanging();
+					this._course_name = value;
+					this.SendPropertyChanged("course_name");
+					this.Oncourse_nameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_section", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string section
+		{
+			get
+			{
+				return this._section;
+			}
+			set
+			{
+				if ((this._section != value))
+				{
+					this.OnsectionChanging(value);
+					this.SendPropertyChanging();
+					this._section = value;
+					this.SendPropertyChanged("section");
+					this.OnsectionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_teachExp", DbType="Int")]
+		public System.Nullable<int> teachExp
+		{
+			get
+			{
+				return this._teachExp;
+			}
+			set
+			{
+				if ((this._teachExp != value))
+				{
+					this.OnteachExpChanging(value);
+					this.SendPropertyChanging();
+					this._teachExp = value;
+					this.SendPropertyChanged("teachExp");
+					this.OnteachExpChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AcademicRank", DbType="NVarChar(100)")]
+		public string AcademicRank
+		{
+			get
+			{
+				return this._AcademicRank;
+			}
+			set
+			{
+				if ((this._AcademicRank != value))
+				{
+					this.OnAcademicRankChanging(value);
+					this.SendPropertyChanging();
+					this._AcademicRank = value;
+					this.SendPropertyChanged("AcademicRank");
+					this.OnAcademicRankChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Lecture_LecturePickDay", Storage="_Lecture", ThisKey="lectureID", OtherKey="id", IsForeignKey=true)]
+		public Lecture Lecture
+		{
+			get
+			{
+				return this._Lecture.Entity;
+			}
+			set
+			{
+				Lecture previousValue = this._Lecture.Entity;
+				if (((previousValue != value) 
+							|| (this._Lecture.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Lecture.Entity = null;
+						previousValue.LecturePickDays.Remove(this);
+					}
+					this._Lecture.Entity = value;
+					if ((value != null))
+					{
+						value.LecturePickDays.Add(this);
+						this._lectureID = value.id;
+					}
+					else
+					{
+						this._lectureID = default(string);
+					}
+					this.SendPropertyChanged("Lecture");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 	
@@ -3740,6 +4164,8 @@ namespace The_amazing_of_numbers.Model
 		
 		private System.Nullable<decimal> _cost;
 		
+		private EntitySet<Academic_AffairPickDay> _Academic_AffairPickDays;
+		
 		private EntitySet<OpenClass> _OpenClasses;
 		
 		private EntityRef<Department> _Department;
@@ -3762,6 +4188,7 @@ namespace The_amazing_of_numbers.Model
 		
 		public Subject_()
 		{
+			this._Academic_AffairPickDays = new EntitySet<Academic_AffairPickDay>(new Action<Academic_AffairPickDay>(this.attach_Academic_AffairPickDays), new Action<Academic_AffairPickDay>(this.detach_Academic_AffairPickDays));
 			this._OpenClasses = new EntitySet<OpenClass>(new Action<OpenClass>(this.attach_OpenClasses), new Action<OpenClass>(this.detach_OpenClasses));
 			this._Department = default(EntityRef<Department>);
 			OnCreated();
@@ -3871,6 +4298,19 @@ namespace The_amazing_of_numbers.Model
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Subject__Academic_AffairPickDay", Storage="_Academic_AffairPickDays", ThisKey="course_id", OtherKey="course_id")]
+		public EntitySet<Academic_AffairPickDay> Academic_AffairPickDays
+		{
+			get
+			{
+				return this._Academic_AffairPickDays;
+			}
+			set
+			{
+				this._Academic_AffairPickDays.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Subject__OpenClass", Storage="_OpenClasses", ThisKey="course_id", OtherKey="course_id")]
 		public EntitySet<OpenClass> OpenClasses
 		{
@@ -3936,6 +4376,18 @@ namespace The_amazing_of_numbers.Model
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_Academic_AffairPickDays(Academic_AffairPickDay entity)
+		{
+			this.SendPropertyChanging();
+			entity.Subject_ = this;
+		}
+		
+		private void detach_Academic_AffairPickDays(Academic_AffairPickDay entity)
+		{
+			this.SendPropertyChanging();
+			entity.Subject_ = null;
 		}
 		
 		private void attach_OpenClasses(OpenClass entity)

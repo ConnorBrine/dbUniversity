@@ -111,7 +111,7 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
                         {
                             case "IT": list = GlobalClass.sv1_HK1B_IT; break;
                             case "Math": list = GlobalClass.sv1_HK1B_Math; break;
-                            case "Bonus": list = GlobalClass.sv1_HK1B_Bonus; break;
+                            case "Bonus": list = GlobalClass.sv1_HK1B_Extra; break;
                             case "TA": list = GlobalClass.sv1_HK1B_TA; break;
                             
                         }
@@ -133,7 +133,7 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
                         {
                             case "IT": list = GlobalClass.sv1_HK2B_IT; break;                           
                             case "Practice": list = GlobalClass.sv1_HK2B_Practice; break;
-                            case "Bonus": list = GlobalClass.sv1_HK2B_Bonus; break;
+                            case "Bonus": list = GlobalClass.sv1_HK2B_Extra; break;
                             case "TA": list = GlobalClass.sv1_HK2B_TA; break;
                         }
                     }
@@ -173,7 +173,7 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
                         switch (department)
                         {
                             case "IT": list = GlobalClass.sv2_HK2B_IT; break;
-                            case "Bonus": list = GlobalClass.sv2_HK2B_Bonus; break;
+                            case "Bonus": list = GlobalClass.sv2_HK2B_Extra; break;
                             case "TA": list = GlobalClass.sv2_HK2B_TA; break;
                         }
                     }

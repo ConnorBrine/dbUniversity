@@ -305,6 +305,7 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.View
         private void generatebtn_Click(object sender, EventArgs e)
         {
             mController.aaController(savesubject, selectiondays, saveclassName);
+            MessageBox.Show("Add Successfully!");
         }
     }
 

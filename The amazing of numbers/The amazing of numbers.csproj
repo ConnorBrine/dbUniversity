@@ -115,6 +115,12 @@
     </Compile>
     <Compile Include="Area\Global\GlobalClass.cs" />
     <Compile Include="Area\Lecturer\Controllers\LecturerController.cs" />
+    <Compile Include="Area\Lecturer\View\ChooseCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area\Lecturer\View\ChooseCourse.Designer.cs">
+      <DependentUpon>ChooseCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Area\Lecturer\View\LecturerInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,12 @@
       <DependentUpon>LecturerMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Area\StudentArea\Controllers\StudentAreaController.cs" />
+    <Compile Include="Area\StudentArea\View\JoinClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area\StudentArea\View\JoinClasses.Designer.cs">
+      <DependentUpon>JoinClasses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Area\StudentArea\View\StudentMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +198,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBUniversityFullDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DBUniversityUpdate2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBUniversityUpdate2DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBUniversityUpdateDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -207,11 +224,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbUniversity.dbml</DependentUpon>
-    </Compile>
-    <Compile Include="sectiondb.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>sectiondb.dbml</DependentUpon>
     </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
@@ -257,8 +269,14 @@
     <EmbeddedResource Include="Area\Admin\View\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Area\Lecturer\View\ChooseCourse.resx">
+      <DependentUpon>ChooseCourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Area\Lecturer\View\LecturerMainForm.resx">
       <DependentUpon>LecturerMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area\StudentArea\View\JoinClasses.resx">
+      <DependentUpon>JoinClasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Area\StudentArea\View\StudentMainForm.resx">
       <DependentUpon>StudentMainForm.cs</DependentUpon>
@@ -356,6 +374,17 @@
     <None Include="DBUniversityFullDataSet1.xss">
       <DependentUpon>DBUniversityFullDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="DBUniversityUpdate2DataSet.xsc">
+      <DependentUpon>DBUniversityUpdate2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBUniversityUpdate2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet.xss">
+      <DependentUpon>DBUniversityUpdate2DataSet.xsd</DependentUpon>
+    </None>
     <None Include="DBUniversityUpdateDataSet.xsc">
       <DependentUpon>DBUniversityUpdateDataSet.xsd</DependentUpon>
     </None>
@@ -385,14 +414,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="sectiondb.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>sectiondb.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="sectiondb.dbml.layout">
-      <DependentUpon>sectiondb.dbml</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
