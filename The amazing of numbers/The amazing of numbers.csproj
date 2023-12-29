@@ -82,6 +82,12 @@
     <Compile Include="Area\AcademicAffair\View\AcademicAffairMainForm.Designer.cs">
       <DependentUpon>AcademicAffairMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Area\AcademicAffair\View\AcademicAffair_Stat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Area\AcademicAffair\View\AcademicAffair_Stat.Designer.cs">
+      <DependentUpon>AcademicAffair_Stat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Area\AcademicAffair\View\Calender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBUniversityUpdate2DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DBUniversityUpdate2DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBUniversityUpdate2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBUniversityUpdate2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBUniversityUpdate2DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DBUniversityUpdateDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -242,6 +258,12 @@
     </Compile>
     <Compile Include="SaveCalendar.Designer.cs">
       <DependentUpon>SaveCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stat.Designer.cs">
+      <DependentUpon>Stat.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
@@ -271,6 +293,9 @@
     </Compile>
     <EmbeddedResource Include="Area\AcademicAffair\View\AcademicAffairMainForm.resx">
       <DependentUpon>AcademicAffairMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Area\AcademicAffair\View\AcademicAffair_Stat.resx">
+      <DependentUpon>AcademicAffair_Stat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Area\AcademicAffair\View\Calender.resx">
       <DependentUpon>Calender.cs</DependentUpon>
@@ -334,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SaveCalendar.resx">
       <DependentUpon>SaveCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stat.resx">
+      <DependentUpon>Stat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -411,6 +439,28 @@
     </None>
     <None Include="DBUniversityUpdate2DataSet.xss">
       <DependentUpon>DBUniversityUpdate2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet1.xsc">
+      <DependentUpon>DBUniversityUpdate2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBUniversityUpdate2DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet1.xss">
+      <DependentUpon>DBUniversityUpdate2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet2.xsc">
+      <DependentUpon>DBUniversityUpdate2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBUniversityUpdate2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBUniversityUpdate2DataSet2.xss">
+      <DependentUpon>DBUniversityUpdate2DataSet2.xsd</DependentUpon>
     </None>
     <None Include="DBUniversityUpdateDataSet.xsc">
       <DependentUpon>DBUniversityUpdateDataSet.xsd</DependentUpon>

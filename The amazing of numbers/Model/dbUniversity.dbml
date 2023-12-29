@@ -141,6 +141,26 @@
       <Association Name="Student_PractiseScore" Member="Student" ThisKey="id" OtherKey="id" Type="Student" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.ProgressScore" Member="ProgressScores">
+    <Type Name="ProgressScore">
+      <Column Name="id" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="school_year" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="semester" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="score" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="learning_score" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Association Name="Student_ProgressScore" Member="Student" ThisKey="id" OtherKey="id" Type="Student" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProgressScore2" Member="ProgressScore2s">
+    <Type Name="ProgressScore2">
+      <Column Name="id" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="school_year" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="semester" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="score" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="learning_score" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Association Name="Student_ProgressScore2" Member="Student" ThisKey="id" OtherKey="id" Type="Student" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Student" Member="Students">
     <Type Name="Student">
       <Column Name="id" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -154,6 +174,8 @@
       <Column Name="status_" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="picture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="Student_PractiseScore" Member="PractiseScores" ThisKey="id" OtherKey="id" Type="PractiseScore" />
+      <Association Name="Student_ProgressScore" Member="ProgressScores" ThisKey="id" OtherKey="id" Type="ProgressScore" />
+      <Association Name="Student_ProgressScore2" Member="ProgressScore2s" ThisKey="id" OtherKey="id" Type="ProgressScore2" />
       <Association Name="Student_StudentRegisClass" Member="StudentRegisClasses" ThisKey="id" OtherKey="id" Type="StudentRegisClass" />
       <Association Name="Student_StudentVio" Member="StudentVios" ThisKey="id" OtherKey="id" Type="StudentVio" />
       <Association Name="Department_Student" Member="Department" ThisKey="department_id" OtherKey="department_id" Type="Department" IsForeignKey="true" />

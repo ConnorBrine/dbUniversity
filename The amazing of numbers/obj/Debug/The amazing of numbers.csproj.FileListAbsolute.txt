@@ -89,3 +89,5 @@ O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of
 O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.StudentArea.View.Calender.resources
 O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.SaveCalendar.resources
 O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Lecturer.View.Lecture_Calendar.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.AcademicAffair_Stat.resources
+O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Stat.resources

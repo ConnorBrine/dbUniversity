@@ -22,9 +22,10 @@ namespace The_amazing_of_numbers
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Schedule());
-            Application.Run(new Login());
+            //Application.Run(new Login());
             //Application.Run(new JoinClasses());
-           //Application.Run(new Area.StudentArea.View.Calender());
+            //Application.Run(new Area.StudentArea.View.Calender());
+            Application.Run(new AcademicAffair_Stat());
         }
     }
 }

@@ -10,6 +10,8 @@ using The_amazing_of_numbers.Area.Global;
 using static The_amazing_of_numbers.Area.AcademicAffair.Controllers.AcademicAffairController;
 using ZXing;
 using System.Web.UI.WebControls;
+using System.Xaml;
+
 
 namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
 
@@ -25,6 +27,15 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
             public int op1;
             public int op2;
         }
+
+        public class ProgressStudent
+        {
+            public Student stu_info;
+            public int learningscore; //quatrinh
+            public int trainingscore; //renluyen
+            public int numVio;
+        }
+
         public class weekdata
         {
             public int daylimit; //if week only have 1: option1; if week have 2: option2
@@ -900,6 +911,120 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
         {
             List<string> lst = (from de in db.Departments
                                select de.department_id).ToList();
+            return lst;
+        }
+        public List<Student> allStudent(string student_year)
+        {
+            List<Student> lst = new List<Student>();
+            if (student_year == "1")
+            {
+                lst = db.Students.Where(x => x.school_year == "2022-2026").ToList();
+            }
+            else if(student_year == "2")
+            {
+                lst = db.Students.Where(x => x.school_year == "2021-2025").ToList();
+            }
+            else if (student_year == "3")
+            {
+                lst = db.Students.Where(x => x.school_year == "2020-2024").ToList();
+            }
+            else if (student_year == "4")
+            {
+                lst = db.Students.Where(x => x.school_year == "2019-2023").ToList();
+            }
+            else
+            {
+                lst = db.Students.ToList();
+            }
+            return lst;
+        }
+        public List<ProgressStudent> resultStudentEachSemester(List<Student> allstudent)
+        {
+            List<ProgressStudent> lst = new List<ProgressStudent>();
+            foreach(Student items in allstudent)
+            {
+                int tmp_learningscore = 0;
+                int tmp_trainingscore = 0;
+                ProgressStudent currentStudent = new ProgressStudent();
+                
+                List<ProgressScore> lst_ProgressScore = db.ProgressScores.Where(x =>x.id == items.id).ToList();
+                //Console.WriteLine("Count = " + lst_ProgressScore.Count);
+                //liệt kê tất cả các HK của sinh viên đó
+                foreach (ProgressScore allProgressScore in lst_ProgressScore)
+                {
+                    //Console.WriteLine(allProgressScore.id);
+                    if (allProgressScore.learning_score != null)
+                    {
+                        tmp_learningscore += (int)allProgressScore.learning_score;
+                    }
+                        tmp_trainingscore += (int)allProgressScore.score;
+                }
+                currentStudent.stu_info = items;
+                currentStudent.learningscore = tmp_learningscore;
+                currentStudent.trainingscore = tmp_trainingscore;
+                currentStudent.numVio = db.StudentVios.Where(x => x.id == items.id).Count();
+                //Console.WriteLine(tmp_trainingscore);
+                lst.Add(currentStudent);
+            }            
+            return lst;
+        }
+        public List<ProgressStudent> sortStudent(List<ProgressStudent> sortdata, bool isAsc, string sortType)
+        {
+            List<ProgressStudent > lst = new List<ProgressStudent>();   
+            if (sortType == "1") //1 = learningscore
+            {                
+                if (isAsc)
+                {
+                    lst = sortdata.OrderBy(x => x.learningscore).ToList();
+                }
+                else
+                {
+                    lst = sortdata.OrderByDescending(x => x.learningscore).ToList();
+                }
+            }
+            if (sortType == "2") //2 = trainingscore == score
+            {
+                if (isAsc)
+                {
+                    lst = sortdata.OrderBy(x => x.trainingscore).ToList();
+                }
+                else
+                {
+                    lst = sortdata.OrderByDescending(x => x.trainingscore).ToList();
+                }
+                
+            }
+            if(sortType == "3") //3 = numVio
+            {
+                if (isAsc)
+                {
+                    lst = sortdata.OrderBy(x => x.numVio).ToList();
+                }
+                else
+                {
+                    lst = sortdata.OrderByDescending(x => x.numVio).ToList();
+                }
+            }
+            return lst;
+        }
+        public List<Student> applySort(List<Student> students, List<ProgressStudent> lastSort) 
+        {
+            List<Student> lst = new List<Student> ();
+
+            foreach(ProgressStudent allProgressStudent in lastSort)
+            {
+                Student findStudent = db.Students.Where(x => x.id == allProgressStudent.stu_info.id).FirstOrDefault();
+                if (findStudent != null)
+                {
+                    lst.Add(findStudent);
+                }
+            }
+
+            return lst;
+        }
+        public List<ProgressStudent> getTop10(List<ProgressStudent> sortdata)
+        {
+            List<ProgressStudent> lst = sortdata.Take(10).ToList();
             return lst;
         }
     }
