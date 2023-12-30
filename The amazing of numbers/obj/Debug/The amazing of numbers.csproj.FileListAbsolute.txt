@@ -91,3 +91,57 @@ O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of
 O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Lecturer.View.Lecture_Calendar.resources
 O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.AcademicAffair_Stat.resources
 O:\Code\C# Window Form Applications\Test clone\Window-Programming\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Stat.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\The amazing of numbers.exe.config
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\The amazing of numbers.exe
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\The amazing of numbers.pdb
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\aa-DJ\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\aa\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\AForge.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\AForge.Video.DirectShow.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\AForge.Video.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\FontAwesome.Sharp.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\Guna.UI2.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\zxing.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\zxing.presentation.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\AForge.xml
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\AForge.Video.xml
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\AForge.Video.DirectShow.xml
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\zxing.xml
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\bin\Debug\zxing.presentation.xml
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.AssemblyReference.cache
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.AcademicAffairMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.AcademicAffair_Stat.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.Calender.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.EditCourse.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.Schedule.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.AcademicAffair.View.viewClass.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Admin.View.AdminMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Lecturer.View.ChooseCourse.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Lecturer.View.LecturerMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.Lecturer.View.Lecture_Calendar.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.StudentArea.View.Calender.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.StudentArea.View.JoinClasses.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Area.StudentArea.View.StudentMainForm.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Button1.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Button2.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Button3.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Course.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.CustomControl.TextBox.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form2.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.SaveCalendar.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Stat.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Login.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.PINLogin.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Properties.Resources.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.QRLogin.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Register.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.aa-DJ.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The_amazing_of_numbers.Form1.aa.resources
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.GenerateResource.cache
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.CoreCompileInputs.cache
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\aa-DJ\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\aa\The amazing of numbers.resources.dll
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The amazing of numbers.csproj.CopyComplete
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The amazing of numbers.exe
+O:\Code\C# Window Form Applications\Test clone\winnew\dbUniversity\The amazing of numbers\obj\Debug\The amazing of numbers.pdb

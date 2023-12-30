@@ -28,34 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dBUniversityUpdate2DataSet2 = new The_amazing_of_numbers.DBUniversityUpdate2DataSet2();
             this.stu_yearcmb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.u1 = new System.Windows.Forms.Button();
-            this.d1 = new System.Windows.Forms.Button();
-            this.u2 = new System.Windows.Forms.Button();
-            this.u3 = new System.Windows.Forms.Button();
-            this.d2 = new System.Windows.Forms.Button();
-            this.d3 = new System.Windows.Forms.Button();
             this.top10btn = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.studentTableAdapter = new The_amazing_of_numbers.DBUniversityUpdate2DataSet2TableAdapters.StudentTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.schoolyearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totcredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.learning_score = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.training_score = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numOfViolations = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBUniversityUpdate2DataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.sexDataGridViewTextBoxColumn,
+            this.schoolyearDataGridViewTextBoxColumn,
+            this.dobDataGridViewTextBoxColumn,
+            this.totcredDataGridViewTextBoxColumn,
+            this.learning_score,
+            this.training_score,
+            this.numOfViolations});
+            this.dataGridView1.DataSource = this.studentBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(22, 76);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1217, 193);
+            this.dataGridView1.Size = new System.Drawing.Size(1461, 572);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // studentBindingSource
+            // 
+            this.studentBindingSource.DataMember = "Student";
+            this.studentBindingSource.DataSource = this.dBUniversityUpdate2DataSet2;
+            // 
+            // dBUniversityUpdate2DataSet2
+            // 
+            this.dBUniversityUpdate2DataSet2.DataSetName = "DBUniversityUpdate2DataSet2";
+            this.dBUniversityUpdate2DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // stu_yearcmb
             // 
+            this.stu_yearcmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.stu_yearcmb.FormattingEnabled = true;
             this.stu_yearcmb.Items.AddRange(new object[] {
             "All",
@@ -81,7 +118,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(332, 28);
+            this.label2.Location = new System.Drawing.Point(388, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 16);
             this.label2.TabIndex = 2;
@@ -90,7 +127,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(520, 28);
+            this.label3.Location = new System.Drawing.Point(587, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 16);
             this.label3.TabIndex = 2;
@@ -99,77 +136,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(814, 28);
+            this.label4.Location = new System.Drawing.Point(831, 44);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.Size = new System.Drawing.Size(59, 16);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Violent";
-            // 
-            // u1
-            // 
-            this.u1.Location = new System.Drawing.Point(381, 12);
-            this.u1.Name = "u1";
-            this.u1.Size = new System.Drawing.Size(57, 23);
-            this.u1.TabIndex = 3;
-            this.u1.Tag = "1";
-            this.u1.Text = "up";
-            this.u1.UseVisualStyleBackColor = true;
-            this.u1.Click += new System.EventHandler(this.Ascending);
-            // 
-            // d1
-            // 
-            this.d1.Location = new System.Drawing.Point(381, 46);
-            this.d1.Name = "d1";
-            this.d1.Size = new System.Drawing.Size(57, 23);
-            this.d1.TabIndex = 3;
-            this.d1.Tag = "1";
-            this.d1.Text = "down";
-            this.d1.UseVisualStyleBackColor = true;
-            this.d1.Click += new System.EventHandler(this.Descending);
-            // 
-            // u2
-            // 
-            this.u2.Location = new System.Drawing.Point(624, 12);
-            this.u2.Name = "u2";
-            this.u2.Size = new System.Drawing.Size(57, 23);
-            this.u2.TabIndex = 3;
-            this.u2.Tag = "2";
-            this.u2.Text = "up";
-            this.u2.UseVisualStyleBackColor = true;
-            this.u2.Click += new System.EventHandler(this.Ascending);
-            // 
-            // u3
-            // 
-            this.u3.Location = new System.Drawing.Point(868, 12);
-            this.u3.Name = "u3";
-            this.u3.Size = new System.Drawing.Size(57, 23);
-            this.u3.TabIndex = 3;
-            this.u3.Tag = "3";
-            this.u3.Text = "up";
-            this.u3.UseVisualStyleBackColor = true;
-            this.u3.Click += new System.EventHandler(this.Ascending);
-            // 
-            // d2
-            // 
-            this.d2.Location = new System.Drawing.Point(625, 46);
-            this.d2.Name = "d2";
-            this.d2.Size = new System.Drawing.Size(57, 23);
-            this.d2.TabIndex = 3;
-            this.d2.Tag = "2";
-            this.d2.Text = "down";
-            this.d2.UseVisualStyleBackColor = true;
-            this.d2.Click += new System.EventHandler(this.Descending);
-            // 
-            // d3
-            // 
-            this.d3.Location = new System.Drawing.Point(868, 47);
-            this.d3.Name = "d3";
-            this.d3.Size = new System.Drawing.Size(57, 23);
-            this.d3.TabIndex = 3;
-            this.d3.Tag = "3";
-            this.d3.Text = "down";
-            this.d3.UseVisualStyleBackColor = true;
-            this.d3.Click += new System.EventHandler(this.Descending);
+            this.label4.Text = "Violation";
             // 
             // top10btn
             // 
@@ -181,18 +152,133 @@
             this.top10btn.UseVisualStyleBackColor = true;
             this.top10btn.Click += new System.EventHandler(this.top10btn_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tăng dần",
+            "Giảm dần"});
+            this.comboBox1.Location = new System.Drawing.Point(452, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(120, 24);
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.Tag = "1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.checkAsc_or_Desc);
+            // 
+            // studentTableAdapter
+            // 
+            this.studentTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name_";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name_";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "sex";
+            this.sexDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // schoolyearDataGridViewTextBoxColumn
+            // 
+            this.schoolyearDataGridViewTextBoxColumn.DataPropertyName = "school_year";
+            this.schoolyearDataGridViewTextBoxColumn.HeaderText = "school_year";
+            this.schoolyearDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.schoolyearDataGridViewTextBoxColumn.Name = "schoolyearDataGridViewTextBoxColumn";
+            this.schoolyearDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dobDataGridViewTextBoxColumn
+            // 
+            this.dobDataGridViewTextBoxColumn.DataPropertyName = "dob";
+            this.dobDataGridViewTextBoxColumn.HeaderText = "dob";
+            this.dobDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dobDataGridViewTextBoxColumn.Name = "dobDataGridViewTextBoxColumn";
+            this.dobDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // totcredDataGridViewTextBoxColumn
+            // 
+            this.totcredDataGridViewTextBoxColumn.DataPropertyName = "tot_cred";
+            this.totcredDataGridViewTextBoxColumn.HeaderText = "tot_cred";
+            this.totcredDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.totcredDataGridViewTextBoxColumn.Name = "totcredDataGridViewTextBoxColumn";
+            this.totcredDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // learning_score
+            // 
+            this.learning_score.DataPropertyName = "learning_score";
+            this.learning_score.HeaderText = "learning_score";
+            this.learning_score.MinimumWidth = 6;
+            this.learning_score.Name = "learning_score";
+            this.learning_score.ReadOnly = true;
+            // 
+            // training_score
+            // 
+            this.training_score.DataPropertyName = "training_score";
+            this.training_score.HeaderText = "traning_score";
+            this.training_score.MinimumWidth = 6;
+            this.training_score.Name = "training_score";
+            this.training_score.ReadOnly = true;
+            // 
+            // numOfViolations
+            // 
+            this.numOfViolations.DataPropertyName = "numOfViolations";
+            this.numOfViolations.HeaderText = "numOfViolations";
+            this.numOfViolations.MinimumWidth = 6;
+            this.numOfViolations.Name = "numOfViolations";
+            this.numOfViolations.ReadOnly = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Tăng dần",
+            "Giảm dần"});
+            this.comboBox2.Location = new System.Drawing.Point(701, 41);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(110, 24);
+            this.comboBox2.TabIndex = 6;
+            this.comboBox2.Tag = "2";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.checkAsc_or_Desc);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Tăng dần",
+            "Giảm dần"});
+            this.comboBox3.Location = new System.Drawing.Point(905, 41);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(110, 24);
+            this.comboBox3.TabIndex = 6;
+            this.comboBox3.Tag = "3";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.checkAsc_or_Desc);
+            // 
             // AcademicAffair_Stat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1318, 684);
+            this.ClientSize = new System.Drawing.Size(1551, 684);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.top10btn);
-            this.Controls.Add(this.d3);
-            this.Controls.Add(this.d2);
-            this.Controls.Add(this.d1);
-            this.Controls.Add(this.u3);
-            this.Controls.Add(this.u2);
-            this.Controls.Add(this.u1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -203,6 +289,8 @@
             this.Text = "AcademicAffair_Stat";
             this.Load += new System.EventHandler(this.AcademicAffair_Stat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dBUniversityUpdate2DataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,12 +304,21 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button u1;
-        private System.Windows.Forms.Button d1;
-        private System.Windows.Forms.Button u2;
-        private System.Windows.Forms.Button u3;
-        private System.Windows.Forms.Button d2;
-        private System.Windows.Forms.Button d3;
         private System.Windows.Forms.Button top10btn;
+        private DBUniversityUpdate2DataSet2 dBUniversityUpdate2DataSet2;
+        private System.Windows.Forms.BindingSource studentBindingSource;
+        private DBUniversityUpdate2DataSet2TableAdapters.StudentTableAdapter studentTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn schoolyearDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dobDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totcredDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn learning_score;
+        private System.Windows.Forms.DataGridViewTextBoxColumn training_score;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numOfViolations;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

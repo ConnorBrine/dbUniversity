@@ -945,11 +945,16 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
             {
                 int tmp_learningscore = 0;
                 int tmp_trainingscore = 0;
+                int countsemester = 1;
                 ProgressStudent currentStudent = new ProgressStudent();
                 
                 List<ProgressScore> lst_ProgressScore = db.ProgressScores.Where(x =>x.id == items.id).ToList();
                 //Console.WriteLine("Count = " + lst_ProgressScore.Count);
                 //liệt kê tất cả các HK của sinh viên đó
+                if (lst_ProgressScore.Count != 0)
+                {
+                    countsemester = 0;
+                }
                 foreach (ProgressScore allProgressScore in lst_ProgressScore)
                 {
                     //Console.WriteLine(allProgressScore.id);
@@ -958,10 +963,11 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
                         tmp_learningscore += (int)allProgressScore.learning_score;
                     }
                         tmp_trainingscore += (int)allProgressScore.score;
+                    countsemester++;
                 }
                 currentStudent.stu_info = items;
-                currentStudent.learningscore = tmp_learningscore;
-                currentStudent.trainingscore = tmp_trainingscore;
+                currentStudent.learningscore = tmp_learningscore / countsemester;
+                currentStudent.trainingscore = tmp_trainingscore / countsemester;
                 currentStudent.numVio = db.StudentVios.Where(x => x.id == items.id).Count();
                 //Console.WriteLine(tmp_trainingscore);
                 lst.Add(currentStudent);
@@ -1005,6 +1011,10 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
                     lst = sortdata.OrderByDescending(x => x.numVio).ToList();
                 }
             }
+            if(sortType == "Top10")
+            {
+                lst = sortdata.OrderByDescending(x => x.learningscore).OrderByDescending(x => x.trainingscore).OrderBy(x => x.numVio).Take(10).ToList();
+            }
             return lst;
         }
         public List<Student> applySort(List<Student> students, List<ProgressStudent> lastSort) 
@@ -1022,10 +1032,10 @@ namespace The_amazing_of_numbers.Area.AcademicAffair.Controllers
 
             return lst;
         }
-        public List<ProgressStudent> getTop10(List<ProgressStudent> sortdata)
+        /*public List<ProgressStudent> getTop10(List<ProgressStudent> sortdata)
         {
             List<ProgressStudent> lst = sortdata.Take(10).ToList();
             return lst;
-        }
+        }*/
     }
 }
